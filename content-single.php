@@ -26,7 +26,7 @@
 		the_content();
 		wp_link_pages(
 			array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'brainpress' ),
+				'before' => '<div class="page-links">' . __( 'Seiten:', 'brainpress' ),
 				'after' => '</div>',
 			)
 		);
@@ -45,16 +45,16 @@
 		if ( ! brainpress_categorized_blog() ) {
 			// This blog only has 1 category so we just need to worry about tags in the meta text
 			if ( $tag_list ) {
-				$meta_text = __( 'This entry was tagged %2$s. Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'brainpress' );
+				$meta_text = __( 'Dieser Eintrag wurde mit %2$s markiert. Setze ein Lesezeichen für den <a href="%3$s" rel="bookmark">Permalink</a>.', 'brainpress' );
 			} else {
-				$meta_text = __( 'Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'brainpress' );
+				$meta_text = __( 'Setze ein Lesezeichen für den <a href="%3$s" rel="bookmark">Permalink</a>.', 'brainpress' );
 			}
 		} else {
 			// But this blog has loads of categories so we should probably display them here
 			if ( $tag_list ) {
-				$meta_text = __( 'This entry was posted in %1$s and tagged %2$s. Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'brainpress' );
+				$meta_text = __( 'Dieser Beitrag wurde unter %1$s veröffentlicht und mit %2$s markiert. Setze ein Lesezeichen für den <a href="%3$s" rel="bookmark">Permalink</a>.', 'brainpress' );
 			} else {
-				$meta_text = __( 'This entry was posted in %1$s. Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'brainpress' );
+				$meta_text = __( 'Dieser Beitrag wurde unter %1$s veröffentlicht. Setze ein Lesezeichen für den <a href="%3$s" rel="bookmark">Permalink</a>.', 'brainpress' );
 			}
 		} // end check for categories on this blog
 
@@ -66,7 +66,7 @@
 		);
 
 		edit_post_link(
-			__( 'Edit', 'brainpress' ),
+			__( 'Bearbeiten', 'brainpress' ),
 			'<span class="edit-link">',
 			'</span>'
 		);

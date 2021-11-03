@@ -65,7 +65,7 @@ if ( ! function_exists( 'brainpress_setup' ) ) :
 			apply_filters(
 				'brainpress_custom_background_args',
 				array(
-					'default-color' => 'f9f9f9',
+					'default-color' => '7a7a7a',
 					'default-image' => '',
 				)
 			)
@@ -122,7 +122,7 @@ if ( ! function_exists( 'brainpress_colorize_title' ) ) :
 		if ( isset( $parts[1] ) ) { $second = ' ' . $parts[1]; }
 
 		$title_new = sprintf(
-			'<span class="yellow">%s</span>%s',
+			'<span class="yellow">%s %s</span>',
 			$first,
 			$second
 		);
@@ -235,13 +235,13 @@ if ( ! function_exists( 'brainpress_scripts' ) ) :
 
 		wp_register_style(
 			'google_fonts_lato',
-			'//fonts.googleapis.com/css?family=Lato:300,400'
+			'https://fonts.googleapis.com/css?family=Dosis:300,400'
 		);
 		wp_enqueue_style( 'google_fonts_lato' );
 
 		wp_register_style(
 			'google_fonts_dosis',
-			'//fonts.googleapis.com/css?family=Dosis:300,400'
+			'https://fonts.googleapis.com/css?family=Dosis:300,400'
 		);
 		wp_enqueue_style( 'google_fonts_dosis' );
 	}

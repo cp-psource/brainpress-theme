@@ -40,7 +40,7 @@ html {
 	-ms-text-size-adjust: 100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
 }
 body {
-	background: #f9f9f9;
+	background: #7a7a7a;
 	font-family: 'Lato', sans-serif;
 	font-size: 18px;
 }
@@ -128,7 +128,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	color:#878786;
+	color:#38c2bb;
 	font-size: 30px;
 }
 
@@ -376,8 +376,8 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-	//border-color: #ccc #bbb #aaa #bbb;
-	//box-shadow: inset 0 1px 0 rgba( 255, 255, 255, 0.8 ), inset 0 15px 17px rgba( 255, 255, 255, 0.8 ), inset 0 -5px 12px rgba( 0, 0, 0, 0.02 );
+	border-color: #ccc #bbb #aaa #bbb;
+	box-shadow: inset 0 1px 0 rgba( 255, 255, 255, 0.8 ), inset 0 15px 17px rgba( 255, 255, 255, 0.8 ), inset 0 -5px 12px rgba( 0, 0, 0, 0.02 );
 }
 button:focus,
 input[type="button"]:focus,
@@ -444,7 +444,7 @@ textarea {
 
 /* Links */
 a {
-	color: #1cb8ea;
+	color: #38c2bb;
 	text-decoration: none;
 }
 a:visited {
@@ -535,12 +535,12 @@ a:active {
 body {
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
-	color: #878786;
+	color: #38c2bb;
 }
 
 p {
 	font-size: 18px;
-	color: #666666;
+	color: #fff;
 }
 
 blockquote p {
@@ -558,7 +558,7 @@ blockquote p {
 	float: right;
 	text-align: right;
 	width: 75%;
-	color: #666666;
+	color: #fff;
 	font-size: 18px;
 	font-family: 'Lato', sans-serif;
 	margin-top: 10px;
@@ -631,7 +631,7 @@ h1.site-title a:hover {
 .main-navigation a {
 	display: block;
 	text-decoration: none;
-	color: #666666;
+	color: #38c2bb;
 	line-height: 18px;
 }
 
@@ -916,9 +916,8 @@ object {
 }
 
 .wrap, .site-content {
-	width: 960px;
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 1em;
+	margin-right: 1em;
 	position: relative;
 }
 
@@ -961,7 +960,9 @@ object {
 
 #secondary.widget-area {
 	float: right;
-	width: 235px;
+	width: 18%;
+	padding-left: 1em;
+	border-left: 1px solid #38c2bb;
 }
 
 .widget-area ol, ul {
@@ -1322,7 +1323,7 @@ body.psecommerce-course .entry-content-excerpt {
 }
 
 .entry-content-excerpt .quick-course-info {
-	border-top: 2px solid #dadc23;
+	border-top: 2px solid #38c2bb;
 	padding-top: 20px;
 	float: left;
 	width: 100%;
@@ -1694,7 +1695,7 @@ input[type="submit"].apply-button-pending,
 }
 
 .h1-instructor-title {
-	border-bottom: 2px solid #dadc23;
+	border-bottom: 2px solid #38c2bb;
 	margin-top: 40px;
 	margin-bottom: 20px;
 	clear: both;
@@ -1710,7 +1711,7 @@ input[type="submit"].apply-button-pending,
 }
 
 .h1-instructors {
-	border-bottom: 2px solid #dadc23;
+	border-bottom: 2px solid #38c2bb;
 	margin-top: 40px;
 	margin-bottom: 20px;
 	clear: both;
@@ -1851,13 +1852,13 @@ h1.title.completed-courses-title {
 }
 
 .left-content {
-	width: 695px;
+	width: 75%;
 	float: left;
 	margin-right: 30px;
 }
 
 .right-content {
-	width: 235px;
+	width: 20%;
 	float: right;
 	margin: 10px 0 0;
 }
@@ -2145,7 +2146,7 @@ li.submenu-certificate a:before {
 ,.module-container .module-response {
 	padding: 20px 30px 0px 20px;
 	background-color: #f3f6f8;
-	border-top: 2px solid #dadc23;
+	border-top: 2px solid #38c2bb;
 }
 
 .module-container.input-radio li {
@@ -2193,7 +2194,7 @@ a[rel="prev"] {
 .caption .video_player,
 .image_holder.caption .wp-caption-text {
 	background-color: #ebeef0;
-	border: 0 solid #dadc23;
+	border: 0 solid #38c2bb;
 	margin-top: 20px;
 }
 .caption .video_player {
@@ -3414,4 +3415,24 @@ RESPONSIVE
 	.course-video {
 		min-height: 240px;
 	}
+}
+
+/* Single-Kurs */
+
+.course_list_box_item {
+    margin: 10px 0 25px 0;
+    position: relative;
+    transform-style: preserve-3d;
+    overflow: hidden;
+    clear: both;
+    border: 1px solid #38c2bb;
+    background-color: transparent; 
+    padding: 15px;
+}
+
+.course_list_box_item.has-thumbnail .course-thumbnail img {
+    border: 1px solid #bbb;
+    padding: 8px;
+    background-color: #c9ced2; 
+   
 }

@@ -10,7 +10,7 @@
 ?>
 <section class="no-results not-found">
 	<header class="page-header">
-		<h1 class="page-title"><?php _e( 'No Courses Found', 'brainpress' ); ?></h1>
+		<h1 class="page-title"><?php _e( 'Keine Kurse gefunden', 'brainpress' ); ?></h1>
 	</header><!-- .page-header -->
 
 	<div class="page-content">
@@ -18,7 +18,7 @@
 
 			<p><?php
 			printf(
-				__( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'brainpress' ),
+				__( 'Bereit Deinen ersten Post zu veröffentlichen? <a href="%1$s">Erste Schritte hier</a>.', 'brainpress' ),
 				esc_url( admin_url( 'post-new.php' ) )
 			);
 			?></p>
@@ -26,14 +26,14 @@
 		<?php elseif ( is_search() ) : ?>
 
 			<p><?php
-			_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'brainpress' );
+			_e( 'Entschuldigung, aber nichts stimmte mit Deinen Suchbegriffen überein. Bitte versuche es erneut mit anderen Schlüsselwörtern.', 'brainpress' );
 			?></p>
 			<?php get_search_form(); ?>
 
 		<?php else : ?>
 
 			<p><?php
-			_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'brainpress' );
+			_e( 'Anscheinend können wir nicht finden, wonach Du suchst. Vielleicht hilft die Suche.', 'brainpress' );
 			?></p>
 			<?php get_search_form(); ?>
 

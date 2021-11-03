@@ -33,13 +33,13 @@ get_header();
                 <div class="total-course-grade">
                     <?php
                     $total_grade = do_shortcode( sprintf( '[course_progress course_id="%s"]', $course_id ) );
-                    printf( '<span class="total-grade">%s: %d%%</span>', __( 'Total'), $total_grade );
+                    printf( '<span class="total-grade">%s: %d%%</span>', __( 'Gesamt'), $total_grade );
                     ?>
                 </div>
 
 			<?php } else { ?>
 				<h1 class="zero-course-units">
-					<?php _e( 'This course has no units yet. Please check back later.' ); ?>
+					<?php _e( 'Dieser Kurs hat noch keine Einheiten. Bitte schaue später noch einmal vorbei.' ); ?>
 				</h1>
 			<?php } ?>
 	</main><!-- #main -->

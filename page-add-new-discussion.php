@@ -14,10 +14,10 @@ $form_message = '';
 if ( isset( $_POST['new_question_submit'] ) ) {
 	check_admin_referer( 'new_question' );
 	if ( empty( $_POST['question_title'] ) ) {
-		$form_message = __( 'Question title is required.', 'brainpress' );
+		$form_message = __( 'Der Titel der Frage ist erforderlich.', 'brainpress' );
 		$form_message_class = 'red';
 	} elseif ( empty( $_POST['question_description'] ) ) {
-		$form_message = __( 'Question description is required.', 'brainpress' );
+		$form_message = __( 'Fragebeschreibung ist erforderlich.', 'brainpress' );
 		$form_message_class = 'red';
 	} else {
 		BrainPress_Data_Discussion::update_discussion(
@@ -59,27 +59,27 @@ $post = BrainPress_Data_Discussion::get_one();
 				$scode = sprintf(
 					'[units_dropdown course_id="%d" include_general="true" general_title="%s"]',
 					$course_id,
-					__( 'Course General', 'brainpress' )
+					__( 'Kurs Allgemein', 'brainpress' )
 				);
 				echo do_shortcode( $scode );
 				?>
 				<div class="new_question">
 					<div class="rounded"><span>Q</span></div>
 					<input type="text" name="question_title" placeholder="<?php
-						esc_attr_e( 'Title of your question', 'brainpress' );
+						esc_attr_e( 'Titel Deiner Frage', 'brainpress' );
 				?>" value="<?php esc_attr_e( $post['post_title'] ); ?>"/>
 					<textarea name="question_description" placeholder="<?php
-						esc_attr_e( 'Question description...', 'brainpress' );
+						esc_attr_e( 'Fragebeschreibung...', 'brainpress' );
 							?>"><?php echo  BrainPress_Helper_Utility::filter_content( $post['post_content'] ); ?></textarea>
 
 					<input type="submit" class="button_submit" name="new_question_submit" value="<?php
-						esc_attr_e( 'Ask this Question', 'brainpress' );
+						esc_attr_e( 'Stelle diese Frage', 'brainpress' );
 ?>" />
 
 					<a href="<?php
 						echo get_permalink( $course_id ) . BrainPress_Core::get_slug( 'discussion' );
 						?>/" class="button_cancel">
-						<?php esc_attr_e( 'Cancel', 'brainpress' ); ?>
+						<?php esc_attr_e( 'Abbrechen', 'brainpress' ); ?>
 					</a>
 
 					<?php wp_nonce_field( 'new_question' ); ?>

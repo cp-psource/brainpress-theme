@@ -24,7 +24,7 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php if ( is_search() ) : // Only display Excerpts for Search ?>
+	<?php if ( is_search() ) : // Nur Auszüge für Suche anzeigen ?>
 		<div class="entry-summary">
 			<?php the_excerpt(); ?>
 		</div><!-- .entry-summary -->
@@ -46,8 +46,8 @@
 
 	<footer class="entry-meta">
 		<?php
-		if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search
-			// translators: Used between list items, there is a space after the comma.
+		if ( 'post' == get_post_type() ) : // Kategorie- und Tag-Text für Seiten in der Suche ausblenden
+			// Übersetzer: Wird zwischen Listenelementen verwendet, es gibt ein Leerzeichen nach dem Komma.
 			$categories_list = get_the_category_list( __( ', ', 'brainpress' ) );
 			if ( $categories_list && brainpress_categorized_blog() ) :
 				?>
@@ -55,9 +55,9 @@
 					<?php printf( __( 'Veröffentlicht in %1$s', 'brainpress' ), $categories_list ); ?>
 				</span>
 				<?php
-			endif; // End if categories
+			endif; // Ende, wenn Kategorien
 
-			// translators: Used between list items, there is a space after the comma.
+			// Übersetzer: Wird zwischen Listenelementen verwendet, es gibt ein Leerzeichen nach dem Komma.
 			$tags_list = get_the_tag_list( '', __( ', ', 'brainpress' ) );
 			if ( $tags_list ) :
 				?>
@@ -65,8 +65,8 @@
 					<?php printf( __( 'Tagged %1$s', 'brainpress' ), $tags_list ); ?>
 				</span>
 				<?php
-			endif; // End if $tags_list
-		endif; // End if 'post' == get_post_type()
+			endif; // Beenden, wenn $tags_list
+		endif; // Beenden wenn 'post' == get_post_type()
 
 		if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) : ?>
 		<span class="comments-link">

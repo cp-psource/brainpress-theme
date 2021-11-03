@@ -14,10 +14,10 @@ if ( isset( $_POST['contact_submit_button'] ) ) {
 		empty( $_POST['subject'] ) ||
 		empty( $_POST['message'] )
 	) {
-		$form_message = __( 'All fields are required.', 'brainpress' );
+		$form_message = __( 'Alle Felder sind erforderlich.', 'brainpress' );
 		$form_message_class = 'error';
 	} elseif ( ! is_email( $_POST['sender_email'] ) ) {
-		$form_message = __( 'E-mail address is not valid.', 'brainpress' );
+		$form_message = __( 'Email Adresse ist nicht gültig.', 'brainpress' );
 		$form_message_class = 'error';
 	} else {
 		add_filter( 'wp_mail_from', 'brainpress_set_sender_from_email' );
@@ -43,10 +43,10 @@ if ( isset( $_POST['contact_submit_button'] ) ) {
 		);
 
 		if ( $sent ) {
-			$form_message = __( 'E-mail sent successfully! We will respond as soon as possible.', 'brainpress' );
+			$form_message = __( 'Email wurde erfolgreich Versendet! Wir werden so schnell wie möglich antworten.', 'brainpress' );
 			$form_message_class = 'regular';
 		} else {
-			$form_message = __( 'An error occured while trying to send the e-mail. Please try again later.', 'brainpress' );
+			$form_message = __( 'Beim Versuch, die E-Mail zu senden, ist ein Fehler aufgetreten. Bitte versuche es später noch einmal.', 'brainpress' );
 			$form_message_class = 'error';
 		}
 	}
@@ -65,26 +65,26 @@ do_action( 'before_contact_form' );
 ?>
 <form id="contact_form" name="contact-form" method="post" class="contact-form">
 	<label class="full">
-		<?php _e( 'Your Name', 'brainpress' ); ?>:
+		<?php _e( 'Dein Name', 'brainpress' ); ?>:
 		<input type="text" name="sender_name" value="" />
 	</label>
 	<?php do_action( 'after_contact_name' ); ?>
 	<label class="full">
-		<?php _e( 'Your E-mail', 'brainpress' ); ?>:
+		<?php _e( 'Deine E-Mail', 'brainpress' ); ?>:
 		<input type="text" name="sender_email" value="" />
 	</label>
 	<?php do_action( 'after_contact_email' ); ?>
 	<label class="full">
-		<?php _e( 'Subject', 'brainpress' ); ?>:
+		<?php _e( 'Betreff', 'brainpress' ); ?>:
 		<input type="text" name="subject" value="" />
 	</label>
 	<?php do_action( 'after_contact_subject' ); ?>
 	<label class="right">
-		<?php _e( 'Message', 'brainpress' ); ?>:
+		<?php _e( 'Nachricht', 'brainpress' ); ?>:
 		<textarea name="message"></textarea>
 	</label>
 	<?php do_action( 'after_contact_message' ); ?>
-	<input type="submit" name="contact_submit_button" class="apply-button-enrolled" value="<?php _e( 'Send', 'brainpress' ); ?>" />
+	<input type="submit" name="contact_submit_button" class="apply-button-enrolled" value="<?php _e( 'Senden', 'brainpress' ); ?>" />
 
 	<?php wp_nonce_field( 'contact_submit' ); ?>
 </form>

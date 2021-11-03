@@ -28,8 +28,8 @@ if ( post_password_required() ) {
 			<?php
 			printf(
 				_nx(
-					'One thought on &ldquo;%2$s&rdquo;',
-					'%1$s thoughts on &ldquo;%2$s&rdquo;',
+					'Ein Gedanke zu &ldquo;%2$s&rdquo;',
+					'%1$s Gedanken zu &ldquo;%2$s&rdquo;',
 					get_comments_number(),
 					'comments title',
 					'brainpress'
@@ -43,9 +43,9 @@ if ( post_password_required() ) {
 		<?php // are there comments to navigate through? ?>
 		<?php if ( get_comment_pages_count() && get_option( 'page_comments' ) ) : ?>
 		<nav id="comment-nav-above" class="comment-navigation" role="navigation">
-			<h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'brainpress' ); ?></h1>
-			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'brainpress' ) ); ?></div>
-			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'brainpress' ) ); ?></div>
+			<h1 class="screen-reader-text"><?php _e( 'Kommentarnavigation', 'brainpress' ); ?></h1>
+			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Ältere Kommentare', 'brainpress' ) ); ?></div>
+			<div class="nav-next"><?php next_comments_link( __( 'Neuere Kommentare &rarr;', 'brainpress' ) ); ?></div>
 		</nav><!-- #comment-nav-above -->
 		<?php endif; // check for comment navigation ?>
 
@@ -64,9 +64,9 @@ if ( post_password_required() ) {
 		<?php // are there comments to navigate through ? ?>
 		<?php if ( get_comment_pages_count() && get_option( 'page_comments' ) ) : ?>
 		<nav id="comment-nav-below" class="comment-navigation" role="navigation">
-			<h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'brainpress' ); ?></h1>
-			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'brainpress' ) ); ?></div>
-			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'brainpress' ) ); ?></div>
+			<h1 class="screen-reader-text"><?php _e( 'Kommentarnavigation', 'brainpress' ); ?></h1>
+			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Ältere Kommentare', 'brainpress' ) ); ?></div>
+			<div class="nav-next"><?php next_comments_link( __( 'Neuere Kommentare &rarr;', 'brainpress' ) ); ?></div>
 		</nav><!-- #comment-nav-below -->
 		<?php endif; // check for comment navigation ?>
 
@@ -76,7 +76,7 @@ if ( post_password_required() ) {
 	// If comments are closed and there are comments, let's leave a little note, shall we?
 	if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
 		?>
-		<p class="no-comments"><?php _e( 'Comments are closed.', 'brainpress' ); ?></p>
+		<p class="no-comments"><?php _e( 'Kommentarfunktion ist geschlossen.', 'brainpress' ); ?></p>
 		<?php
 	endif;
 	?>

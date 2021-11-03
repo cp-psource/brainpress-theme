@@ -26,7 +26,7 @@
 			</h1>
 		</header><!-- .entry-header -->
 
-		<?php if ( is_search() ) : // Only display Excerpts for Search   ?>
+		<?php if ( is_search() ) : // Nur Auszüge für Suche anzeigen  ?>
 			<div class="entry-summary">
 				<?php the_excerpt(); ?>
 			</div><!-- .entry-summary -->
@@ -34,12 +34,12 @@
 			<div class="entry-content <?php echo $extended_class; ?>">
 				<div class="instructors-content">
 					<?php
-					// Flat hyperlinked list of instructors
+					// Flache Hyperlink-Liste der Kursleiter
 					echo do_shortcode( '[course_instructors style="list-flat" link="true"]' );
 					?>
 				</div>
 				<?php
-				// Course summary/excerpt
+				// Kurszusammenfassung/Auszug
 				echo do_shortcode( '[course_summary length="50" class="' . $extended_class . '"]' );
 				wp_link_pages(
 					array(
@@ -62,9 +62,9 @@
 		<?php endif; ?>
 
 		<footer class="entry-meta">
-			<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search  ?>
+			<?php if ( 'post' == get_post_type() ) : // Kategorie- und Tag-Text für Seiten in der Suche ausblenden  ?>
 				<?php
-				// Translators: Used between list items, there is a space after the comma.
+				// Übersetzer: Wird zwischen Listenelementen verwendet, es gibt ein Leerzeichen nach dem Komma.
 				$categories_list = get_the_category_list( __( ', ', 'brainpress' ) );
 				if ( $categories_list && brainpress_categorized_blog() ) :
 					?>
@@ -72,9 +72,9 @@
 						<?php printf( __( 'Kurse in %1$s', 'brainpress' ), $categories_list ); ?>
 					</span>
 					<?php
-				endif; // End if categories
+				endif; // Ende, wenn Kategorien
 
-				// Translators: Used between list items, there is a space after the comma.
+				// Übersetzer: Wird zwischen Listenelementen verwendet, es gibt ein Leerzeichen nach dem Komma.
 				$tags_list = get_the_tag_list( '', __( ', ', 'brainpress' ) );
 				if ( $tags_list ) :
 					?>

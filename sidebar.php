@@ -14,7 +14,7 @@
 		</aside>
 
 		<aside id="archives" class="widget">
-			<h1 class="widget-title"><?php _e( 'Archive', 'brainpress' ); ?></h1>
+			<h1 class="widget-title"><?php _e( 'Archiv', 'brainpress' ); ?></h1>
 			<ul>
 				<?php wp_get_archives( array( 'type' => 'monthly' ) ); ?>
 			</ul>

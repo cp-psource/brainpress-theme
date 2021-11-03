@@ -67,7 +67,7 @@
 						?>
 
 						<a class="skip-link screen-reader-text" href="#content">
-						<?php _e( 'Skip to content', 'brainpress' ); ?>
+						<?php _e( 'Zum Inhalt springen', 'brainpress' ); ?>
 						</a>
 						<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 					</nav><!-- #site-navigation -->

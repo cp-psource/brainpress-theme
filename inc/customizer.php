@@ -18,67 +18,67 @@ class BrainPress_Theme_Customizer {
 		$colors[] = array(
 			'slug' => 'body_text_color',
 			'default' => '#878786',
-			'label' => __( 'Body Text Color', 'brainpress' ),
+			'label' => __( 'Body Textfarbe', 'brainpress' ),
 		);
 
 		$colors[] = array(
 			'slug' => 'content_text_color',
-			'default' => '#666666',
-			'label' => __( 'Content Text Color', 'brainpress' ),
+			'default' => '#fff',
+			'label' => __( 'Content Textfarbe', 'brainpress' ),
 		);
 
 		$colors[] = array(
 			'slug' => 'content_header_color',
 			'default' => '#878786',
-			'label' => __( 'Content Header Color', 'brainpress' ),
+			'label' => __( 'Content Headerfarbe', 'brainpress' ),
 		);
 
 		$colors[] = array(
 			'slug' => 'content_link_color',
-			'default' => '#1cb8ea',
-			'label' => __( 'Content Links Color', 'brainpress' ),
+			'default' => '#38c2bb',
+			'label' => __( 'Content Linkfarbe', 'brainpress' ),
 		);
 
 		$colors[] = array(
 			'slug' => 'content_link_hover_color',
-			'default' => '#1cb8ea',
-			'label' => __( 'Content Links Hover Color', 'brainpress' ),
+			'default' => '#38c2bb',
+			'label' => __( 'Content Links Hover Farbe', 'brainpress' ),
 		);
 
 		$colors[] = array(
 			'slug' => 'main_navigation_link_color',
-			'default' => '#666',
-			'label' => __( 'Main Navigation Links Color', 'brainpress' ),
+			'default' => '#38c2bb',
+			'label' => __( 'Farbe der Hauptnavigationslinks', 'brainpress' ),
 		);
 
 		$colors[] = array(
 			'slug' => 'main_navigation_link_hover_color',
 			'default' => '#74d1d4',
-			'label' => __( 'Main Navigation Links Hover Color', 'brainpress' ),
+			'label' => __( 'Hauptnavigationslinks Hover-Farbe', 'brainpress' ),
 		);
 
 		$colors[] = array(
 			'slug' => 'footer_background_color',
 			'default' => '#f2f6f8',
-			'label' => __( 'Footer Background Color', 'brainpress' ),
+			'label' => __( 'Footer Hintergrundfarbe', 'brainpress' ),
 		);
 
 		$colors[] = array(
 			'slug' => 'footer_link_color',
-			'default' => '#83abb6',
-			'label' => __( 'Footer Links Color', 'brainpress' ),
+			'default' => '#38c2bb',
+			'label' => __( 'Footer Linkfarbe', 'brainpress' ),
 		);
 
 		$colors[] = array(
 			'slug' => 'footer_link_hover_color',
-			'default' => '#74d1d4',
-			'label' => __( 'Footer Links Hover Color', 'brainpress' ),
+			'default' => '#38c2bb',
+			'label' => __( 'Footer Links Hover Farbe', 'brainpress' ),
 		);
 
 		$colors[] = array(
 			'slug' => 'widget-text-color',
-			'default' => '#c0c21e',
-			'label' => __( 'Widgets Title Color', 'brainpress' ),
+			'default' => '#38c2bb',
+			'label' => __( 'Widgets Titelfarbe', 'brainpress' ),
 		);
 
 		sort( $colors );
@@ -134,7 +134,7 @@ class BrainPress_Theme_Customizer {
 					$wp_customize,
 					'logo',
 					array(
-						'label' => __( 'Upload a logo', 'brainpress' ),
+						'label' => __( 'Lade ein Logo hoch', 'brainpress' ),
 						'section' => 'cp_logo_section',
 						'settings' => 'brainpress_logo',
 					)

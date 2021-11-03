@@ -81,7 +81,7 @@ get_header();
 			} else {
 				?>
 				<h1 class="zero-course-units">
-					<?php _e( 'This course has no notifications yet. Please check back later.' ); ?>
+					<?php _e( 'Dieser Kurs hat noch keine Benachrichtigungen. Bitte schaue später noch einmal vorbei.' ); ?>
 				</h1>
 				<?php
 			}

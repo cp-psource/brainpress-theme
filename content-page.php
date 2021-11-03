@@ -16,7 +16,7 @@
 		the_content();
 		wp_link_pages(
 			array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'brainpress' ),
+				'before' => '<div class="page-links">' . __( 'Seiten:', 'brainpress' ),
 				'after' => '</div>',
 			)
 		);
@@ -24,7 +24,7 @@
 	</div><!-- .entry-content -->
 	<?php
 	edit_post_link(
-		__( 'Edit', 'brainpress' ),
+		__( 'Bearbeiten', 'brainpress' ),
 		'<footer class="entry-meta"><span class="edit-link">',
 		'</span></footer>'
 	);
