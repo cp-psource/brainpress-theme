@@ -5,6 +5,9 @@
  * @package BrainPress
  */
 
+// Do not allow direct access over web.
+defined( 'ABSPATH' ) || exit;
+
 global $post;
 
 $course_id = $post->ID;

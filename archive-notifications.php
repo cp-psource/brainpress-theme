@@ -4,6 +4,10 @@
  *
  * @package BrainPress
  */
+
+// Do not allow direct access over web.
+defined( 'ABSPATH' ) || exit;
+
 global $wp;
 
 $course_id = get_the_id();

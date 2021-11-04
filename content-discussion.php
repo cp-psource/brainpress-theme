@@ -3,6 +3,9 @@
  * @package BrainPress
  */
 
+// Do not allow direct access over web.
+defined( 'ABSPATH' ) || exit;
+
 $args  = BrainPress_Data_Discussion::get_query_args_by_name();
 $the_query = new WP_Query( $args );
 if ( $the_query->have_posts() ) {

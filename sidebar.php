@@ -4,6 +4,10 @@
  *
  * @package BrainPress
  */
+
+// Do not allow direct access over web.
+defined( 'ABSPATH' ) || exit;
+
 ?>
 <div id="secondary" class="widget-area" role="complementary">
 	<?php do_action( 'before_sidebar' ); ?>

@@ -2,6 +2,10 @@
 /**
  * @package BrainPress
  */
+
+// Do not allow direct access over web.
+defined( 'ABSPATH' ) || exit;
+
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
@@ -47,7 +51,7 @@
 	<section id="additional-summary">
 		<div class="social-shares">
 			<span>
-				<?php _e( 'TEILEN', 'brainpress' ); ?>
+				<?php _e( 'KURS TEILEN', 'brainpress' ); ?>
 			</span>
 			<a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=<?php the_permalink(); ?>&p[images][0]=&p[title]=<?php the_title(); ?>&p[summary]=<?php echo urlencode( strip_tags( get_the_excerpt() ) ); ?>" class="facebook-share" target="_blank"></a>
 			<a href="http://twitter.com/home?status=<?php the_title(); ?> <?php the_permalink(); ?>" class="twitter-share" target="_blank"></a>

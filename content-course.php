@@ -2,6 +2,10 @@
 /**
  * @package BrainPress
  */
+
+// Do not allow direct access over web.
+defined( 'ABSPATH' ) || exit;
+
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php

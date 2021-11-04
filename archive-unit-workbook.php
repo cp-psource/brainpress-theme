@@ -5,6 +5,9 @@
  * @package BrainPress
  */
 
+// Do not allow direct access over web.
+defined( 'ABSPATH' ) || exit;
+
 $course_id = do_shortcode( '[get_parent_course_id]' );
 $progress = do_shortcode( '[course_progress course_id="' . $course_id . '"]' );
 //redirect to the parent course page if not enrolled

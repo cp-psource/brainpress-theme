@@ -1,4 +1,8 @@
 <?php
+
+// Do not allow direct access over web.
+defined( 'ABSPATH' ) || exit;
+
 $form_message_class = false;
 $form_message = false;
 

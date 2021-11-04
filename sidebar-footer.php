@@ -4,6 +4,10 @@
  *
  * @package BrainPress
  */
+
+// Do not allow direct access over web.
+defined( 'ABSPATH' ) || exit;
+
 ?>
 <div id="third" class="widget-area footer-widget-area clearf" role="complementary">
 	<?php

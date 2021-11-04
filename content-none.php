@@ -7,6 +7,9 @@
  * @package BrainPress
  */
 
+// Do not allow direct access over web.
+defined( 'ABSPATH' ) || exit;
+
 ?>
 <section class="no-results not-found">
 	<header class="page-header">

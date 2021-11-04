@@ -7,6 +7,9 @@
  * @package BrainPress
  */
 
+// Do not allow direct access over web.
+defined( 'ABSPATH' ) || exit;
+
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 	<head>

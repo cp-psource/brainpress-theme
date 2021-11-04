@@ -14,6 +14,9 @@ Template Name: Default (footer widgets)
  * @package BrainPress
  */
 
+// Do not allow direct access over web.
+defined( 'ABSPATH' ) || exit;
+
 global $post;
 
 get_header();

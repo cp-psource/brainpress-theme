@@ -1,4 +1,8 @@
 <?php
+
+// Do not allow direct access over web.
+defined( 'ABSPATH' ) || exit;
+
 /**
  * BrainPress functions and definitions
  *
@@ -51,8 +55,8 @@ if ( ! function_exists( 'brainpress_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
-				'primary' => __( 'Primary Menu', 'brainpress' ),
-				'secondary' => __( 'Footer Menu', 'brainpress' ),
+				'primary' => __( 'Hauptmenü', 'brainpress' ),
+				'secondary' => __( 'Footermenü', 'brainpress' ),
 			)
 		);
 

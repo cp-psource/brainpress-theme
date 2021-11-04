@@ -5,6 +5,9 @@
  * @package BrainPress
  */
 
+// Do not allow direct access over web.
+defined( 'ABSPATH' ) || exit;
+
 $course_id = do_shortcode( '[get_parent_course_id]' );
 cp_can_access_course( $course_id );
 

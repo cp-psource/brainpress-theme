@@ -4,6 +4,10 @@
  *
  * @package BrainPress
  */
+
+// Do not allow direct access over web.
+defined( 'ABSPATH' ) || exit;
+
 get_header();
 ?>
 <div id="primary" class="content-area content-instructor-profile">
