@@ -43,7 +43,7 @@ if ( empty( $user ) ) {
 		?>
 
 		<h2 class="h2-instructor-bio">
-			<?php _e( 'Courses', 'brainpress' ); ?>
+			<?php _e( 'Kurse', 'brainpress' ); ?>
 		</h2>
 
 		<?php
